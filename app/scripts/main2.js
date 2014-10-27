@@ -1,4 +1,3 @@
-
 var Enemy = function (name){
   this.name = name;
   this.health = 100;
@@ -66,13 +65,13 @@ $('.welcome2 button').on('click', function (event){
 
   event.preventDefault();
 
-//create instance of good guy
+
     player = new Good({
     name: $(this).text(),
     type: parseInt($(this).attr('name'))
 
     });
-//create instance of bad guy
+
    monster = new Enemy("Bill O'Reilly");
 
     $('.welcome2').fadeOut(800,function (){

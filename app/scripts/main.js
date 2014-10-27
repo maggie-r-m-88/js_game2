@@ -1,4 +1,5 @@
 
+
 var Enemy = function (name){
   this.name = name;
   this.health = 100;
@@ -61,19 +62,14 @@ $('.horns').addClass('animated bounceInDown');
 $('.welcome h3').addClass('animated zoomIn');
 $('.welcome li').addClass('animated zoomIn');
 
-
-
 $('.welcome button').on('click', function (event){
 
   event.preventDefault();
 
-//create instance of good guy
     player = new Good({
     name: $(this).text(),
     type: parseInt($(this).attr('name'))
-
     });
-//create instance of bad guy
    monster = new Enemy('Satan');
 
     $('.welcome').fadeOut(800,function (){
@@ -112,7 +108,6 @@ else{
 
     $('#game-over').fadeIn();
    $('.game-over-message').prepend("YOU WIN! " + "...good has triumphed over evil!");
-   $('.beyonce').fadeIn();
 
   }
 
@@ -138,9 +133,4 @@ else{
 
 
    }
-
-
-
-
-
 });
