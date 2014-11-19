@@ -1,5 +1,3 @@
-
-
 var Enemy = function (name){
   this.name = name;
   this.health = 100;
@@ -54,8 +52,7 @@ var Good = function (options){
 };
 
 
-var player,
- monster;
+var player, monster;
 $('.welcome h2').addClass('animated bounceInDown');
 $('.halo').addClass('animated bounceInDown');
 $('.horns').addClass('animated bounceInDown');
@@ -67,8 +64,8 @@ $('.welcome button').on('click', function (event){
   event.preventDefault();
 
     player = new Good({
-    name: $(this).text(),
-    type: parseInt($(this).attr('name'))
+      name: $(this).text(),
+      type: parseInt($(this).attr('name'))
     });
    monster = new Enemy('Satan');
 
@@ -77,8 +74,9 @@ $('.welcome button').on('click', function (event){
     $('.ggName').prepend(player.name).find('.ggHealth').text(player.health);
     $('.bbName').prepend(monster.name).find('.bbHealth').text(player.health);
     $('.fight').fadeIn();
+  });
 
-  
+
 
 });
 
