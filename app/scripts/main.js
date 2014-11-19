@@ -78,7 +78,7 @@ $('.welcome button').on('click', function (event){
     $('.bbName').prepend(monster.name).find('.bbHealth').text(player.health);
     $('.fight').fadeIn();
 
-  });
+  
 
 });
 
